@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color:#6E6E6E;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #2A0A22;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #B40431;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #B40431;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+ .manager{
+			align:center;
+			border-radius: 100%;
+				}
+table{
+ background-color:gray;
+ Padding:30px;
+ border-radius:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="managerdashboard.html">Welccome</a>
+  <a href="profile.html">Profile</a>
+  <a href="blog.html">Blogs</a>
+  <a href="clientmanagement.html">Client Management</a>
+  <a href="staffmanagement.html">Staff Management</a>
+  <a href="home.html">Log Out</a>
+</div>
+
+<div class="content">
+<center><h1>Manager Dashboard</h1>
+ <img src="manager1.jpg" alt="manager" class="manager" style="width:200px"></center>
+ <center> 
+  <h3><table>
+  <tr>
+	<td><h2>Mark Smith</h2></td></tr><br>
+		<tr>
+			<td>Jobrole</td>
+			<td>Manager</td>
+			<td>Edit</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>Clayfield,qld 4011</td>
+				<td>Edit</td>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td>28 years</td>
+				<td>Edit</td>
+		</tr>
+		<tr>
+			<td>Gender
+			<td> Male</td>
+				<td>Edit</td>
+		</tr>
+		<tr>
+			<td>Qualification </td>
+			<td> Master in Music</td>
+				<td>Edit</td>
+		</tr>
+		<tr>
+			<td>Mobile No.</td>
+			<td>+61 404268786</td>
+				<td>Edit</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>mark_smith28@gmail.com</td>
+				<td>Edit</td>
+		</tr>
+		<tr>
+			<td>Username </td>
+			<td> marksmith28</td>
+				<td>Edit</td>
+		</tr>
+		 <tr>
+			<td>Password </td>
+			<td> marksmith28</td>
+				<td>Edit</td>
+		</tr> 
+		 
+  </table></h3></center>
+  
+
+</div>
+
+</body>
+</html>
