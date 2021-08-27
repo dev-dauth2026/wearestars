@@ -147,11 +147,11 @@ padding-bottom:20px;
       <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Log In</h4>
-            <div class="middle" style="height:60px;float:left;margin-left:80px;">
-              <button class="middle" ><a href ="login.php" style="color:white;">Client Login </a></button>
-              <button class="middle" ><a href ="staff_login.php" style="color:white;">Staff Login </a></button>
+          <div class="modal-header d-flex justify-content-center algin-items-center flex-column">
+            <h4 class="modal-title ">Log In</h4><br>
+            <div class="middle ">
+              <a href ="login.php" class="btn btn-success mx-3">Client Login </a>
+              <a href ="staff_login.php" class="btn btn-success">Staff Login </a>
             </div>
           </div>
         </div>
@@ -159,13 +159,6 @@ padding-bottom:20px;
     </div>
     <!-- Modal end  -->
     <!-- Navbar -->
-      <div class="navbar">
-            <a href="home.php" class="active"><img src="homeicon.jpg" width="15px" height="15px" style="position:relative"> Home</a>
-            <a href="membership.php">Membership</a>
-            <a href="aboutus.php">About us</a>
-            <a href="contact.php">Contact us</a>
-      </div>  
-    	
       <nav class="navbar navbar-expand-lg ">
           <div class="container-fluid nav_div d-flex justify-content-center align-items-center">
         
@@ -175,45 +168,34 @@ padding-bottom:20px;
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
                 <li class="nav-item d-flex justify-content-center ">
-                  <a class="nav-link  active" aria-current="page" href="#">Home</a>
+                
+                  <a class="nav-link  active" href="home.php" aria-current="page" >Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                  <a class="nav-link" href="membership.php" >Membership</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" href="aboutus.php" >About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.php" >Contact Us</a>
                 </li>
               </ul>
               
             </div>
             <form class="d-flex" action="/action_page.php">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"> </i> Search</button>
               </form>
-                <form >
-                  <input type="text" placeholder="Search.." name="search">
-                  <button class="search" type="submit"></button>
-                </form>
-                <button class="signup" ><a href="client_sign_up.php" style="color:white">Sign Up </a></button>
-                <button type="button" class="login" data-toggle="modal" data-target="#myModal">Log In</button>
+              <a href="client_sign_up.php" class="btn btn-primary mx-3">Sign Up </a>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Log In</button>
           </div>
        </nav>	
     <!-- Navbar end  -->
 </div>
 <!-- Header end  -->
 <!-- Carousel -->
-  <div class="container">
+  <div class="container mb-5">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -252,7 +234,7 @@ padding-bottom:20px;
 
 
 
-<div class="clearfix"></div>
+
 <div class="footer">
 	<p><b><u> Help and Support</u></b><br>
 	City Hall, 64 Adelaide St, Brisbane City QLD 4000.
