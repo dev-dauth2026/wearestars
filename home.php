@@ -9,7 +9,8 @@ include ('server.php')
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,150 +19,44 @@ include ('server.php')
 <style>
 
 *{
+  margin:0;
+  padding:0;
 	box-sizing:border-box;	
 }
 body{
 font-family: Arial, Helvetica, sans-serif;
 	background-color:white;
-	widht:100%;
-	  background-size: cover;
+	background-size: cover;
 	  	  margin:0;
 	}
 	
-div.header{
-	text-align:left;
-	padding-top:0.5vw;
+.header{
 	width:100%;
 	background-image:url('homebg.jpg');	
 	background-size:cover;
-	margin:0;	
-	padding-bottom:0;
+	margin-bottom:2rem;	
+	padding:5px;
 	}
-.header input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  float:right;
-  margin-top:20px;
-}
-img.logo{
+
+.main_header .logo{
 	width:200px;
 	height:200px;
 	float:left;
 	margin-left:5%;
 	border-radius:100%;
 }
-img.homelogo{
-	margin-left:60px;
-}
-.navbar {
-  overflow: hidden;
-  width:100%;
-  height:45px;
-  padding-bottom:0px;
-  margin-bottom:0px;
-
-   
-  }
-
-.navbar a {
-  float: left;
-  font-size: 1vw;
-  color: white;
-   text-align: center;
-  padding: 2px 2px;
-  text-decoration: none;
-  height:45px;
-  width:120px;
-  padding-bottom:0px;
-  
-}
-
-.navbar a:hover{
-   background-color:gray;
-}
-
-.navbar a.active {
-  background-color:gray;
-  color: white;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color:none;
-  padding-bottom:0px;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  padding-bottom:0px;
-}
-
-.
-
-.signup .login {
-  font-size: 16px;  
-    color: white;
-   font-family: inherit;
-  margin: 0;
-  border-radius:40px;
-  float:right;
+nav .nav_div a{
+  text-decoration:none;
+  color:white;
 }
 
 
 
-
-button{
-	width:95px;
-	height:45px;
-	margin-top:15px;
-	margin-right:15px;
-	background-color:green;
-	color:white;
-	opacity:0.6;
-	transition:0.3s;
-	  border-radius:40px;
-	  float:right;
-	  border-size:0px;
-	  
-}
-
-.signup{
-	background-color:#0080FF;
-}
-
-
-	
-.body{background-image:url('bodybg.jpg');
-background-size:cover;
-}
-.container{margin-top:0px;
-padding:0 0 0 0;
-height:auto;
-overflow:hidden;
-}
 .footer{background-color:#2E2E2E;
 color:white;
 text-align:center;
 padding-top:20px;
 padding-bottom:20px;
-}
-.fa {
- 
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px 2px;
-  border-radius:100%;
-  padding-top:10px;
 }
 
 .fa:hover {
@@ -220,26 +115,8 @@ padding-bottom:20px;
   background: #430297;
   color: white;
 }
-button.search{margin-left:0px;
-margin-top:18px;
-border-radius:0px;
-padding-top:0px;
-height:40px;
-width:50px;}
-button:hover{
-	opacity:1;
-	transform:scale(1.05);
-	
-}
-.middle{
-	margin-bottom:40px;
-	margin-top:20px;
-	margin-left:50px;
-}
-.container img {margin-top:0px;}
-* {
-  box-sizing: border-box;
-}
+
+
 
 .responsive {
   padding: 15px 15px 15px 15px;
@@ -254,134 +131,124 @@ button:hover{
   }
 }
 
-
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 700px) {
-  .navbar {
-    width: 100%;
-    height: auto;
-    position: relative;
-	overflow:auto;
-	padding-bottom:80px;
-  }
-  .navbar a {float: left;width:100%;}
-  
-  .navbar img{width:15px;height:15px;position:abosolute;}
-  div.dropdown {float:left; width:100%;}
-  .signup, .login{float;left;width:100%;margin-top:20px;}
-  .dropdown-content a{width:100%;diplay:block;margin:0,overflow:hidden;}
-  .dropdown-content {width:100%;diplay:block; position:absolute;margin-bottom:20px;}
-
-}
-
-
 	
 </style>
 </head>
 <body>
-
-
 <div class="header">
-			<div>
-			
-					<button class="signup" ><a href="client_sign_up.php" style="color:white">Sign Up </a></button>
-					
-					
-					<button type="button" class="login" data-toggle="modal" data-target="#myModal">Log In</button>
-
-					  <!-- Modal -->
-					  <div class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-						
-						  <!-- Modal content-->
-						  <div class="modal-content">
-							<div class="modal-header">
-							 
-							  <center><h4 class="modal-title">Log In</h4></center>
-							  <div class="middle" style="height:60px;float:left;margin-left:80px;">
-							   <button class="middle" ><a href ="login.php" style="color:white;">Client Login </a></button>
-							  <button class="middle" ><a href ="staff_login.php" style="color:white;">Staff Login </a></button>
-							 
-							<br><br><br><br>
-							
-							</div>
-							</div>
-							
-						  </div>
-						  
-						</div>
-					  </div>
-  
-					<form action="/action_page.php">
-					<button class="search" type="submit"><i class="fa fa-search"></i></button>
-			<input type="text" placeholder="Search.." name="search">
-			
-			</form>
-				<img class="homelogo" src="homelogo.png" alt="logo" height="200px" width="600px">
-				<img class="logo" src="home.png" alt="logo" >
-				 
-					
-				  </div> 
-				
-					
-					  
-				  
-				
-			
-		
-	<div class="navbar">
-			  <a href="home.php" class="active"><img src="homeicon.jpg" width="15px" height="15px" style="position:relative"> Home</a>
-			  <a href="membership.php">Membership</a>
-				<a href="aboutus.php">About us</a>
-				 <a href="contact.php">Contact us</a>
-				
-				  
-			</div>		
-</div>
-<div class="body">
-<div class="container">
-    
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="image1.jpg"  style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="image2.jpg"  style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="image3.jpg"  style="width:100%;">
+    <!-- Main Header  -->
+    <div class="main_header">
+    <img class="homelogo" src="homelogo.png" alt="logo" height="200px" width="600px">
+    <img class="logo" src="home.png" alt="logo" >
+    </div>
+    <!-- Main header end  -->
+			<!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Log In</h4>
+            <div class="middle" style="height:60px;float:left;margin-left:80px;">
+              <button class="middle" ><a href ="login.php" style="color:white;">Client Login </a></button>
+              <button class="middle" ><a href ="staff_login.php" style="color:white;">Staff Login </a></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Modal end  -->
+    <!-- Navbar -->
+      <div class="navbar">
+            <a href="home.php" class="active"><img src="homeicon.jpg" width="15px" height="15px" style="position:relative"> Home</a>
+            <a href="membership.php">Membership</a>
+            <a href="aboutus.php">About us</a>
+            <a href="contact.php">Contact us</a>
+      </div>  
+    	
+      <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid nav_div d-flex justify-content-center align-items-center">
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+                <li class="nav-item d-flex justify-content-center ">
+                  <a class="nav-link  active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              
+            </div>
+            <form class="d-flex" action="/action_page.php">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"> </i> Search</button>
+              </form>
+                <form >
+                  <input type="text" placeholder="Search.." name="search">
+                  <button class="search" type="submit"></button>
+                </form>
+                <button class="signup" ><a href="client_sign_up.php" style="color:white">Sign Up </a></button>
+                <button type="button" class="login" data-toggle="modal" data-target="#myModal">Log In</button>
+          </div>
+       </nav>	
+    <!-- Navbar end  -->
+</div>
+<!-- Header end  -->
+<!-- Carousel -->
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>				
-</div>				
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="image1.jpg"  style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="image2.jpg"  style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="image3.jpg"  style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>				
+				
 
 
 
@@ -431,7 +298,8 @@ function myFunction1() {
   window.open("client_sign_up.php");
 }
 </script>
-	
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>	
 	
 </body>
 </html>
